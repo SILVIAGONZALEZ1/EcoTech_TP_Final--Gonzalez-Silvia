@@ -23,7 +23,9 @@ class TestVistaPanelSustentabilidad(unittest.TestCase):
         self.assertEqual(respuesta.status_code, 200)
         contenido = respuesta.content.decode("utf-8")
         self.assertIn("Panel de sustentabilidad", contenido)
-        self.assertIn("1064.00 kg", contenido)
+        self.assertIn("1064.00", contenido)
+        self.assertIn("kg CO₂", contenido)
+        self.assertIn("Planta Norte", contenido)
 
 
 if __name__ == "__main__":
