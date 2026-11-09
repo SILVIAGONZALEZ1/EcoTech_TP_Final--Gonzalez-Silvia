@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de sustentabilidad | EcoTech</title>
+</head>
+<body>
+  <main>
+    <h1>Panel de sustentabilidad</h1>
+    <p>Emisiones totales: {{ total_emisiones_kg|floatformat:2 }} kg CO₂</p>
+    <p>Planta de mayor consumo: {{ planta_mayor_consumo|default:"Sin datos" }}</p>
+    <p>Consumo de la planta principal: {{ consumo_mayor_kwh|floatformat:2 }} kWh</p>
+    <h2>Consumo por planta</h2>
+    <ul>
+      {% for planta, consumo in consumo_por_planta.items %}
+        <li>{{ planta }}: {{ consumo|floatformat:2 }} kWh</li>
+      {% empty %}
+        <li>No hay registros de consumo.</li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>

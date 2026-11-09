@@ -1,0 +1,16 @@
+[
+  {
+    "tipo": "PanelSolar",
+    "nombre": "Solar Eco 400",
+    "categoria": "Panel solar",
+    "stock": 12,
+    "potencia_w": 400,
+    "eficiencia": 21.5
+  },
+  {
+    "tipo": "DispositivoEcologico",
+    "nombre": "Cargador Verde",
+    "categoria": "Accesorios",
+    "stock": 30
+  }
+]
