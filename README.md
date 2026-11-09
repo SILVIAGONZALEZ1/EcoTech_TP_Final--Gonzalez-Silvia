@@ -40,3 +40,5 @@ python -m ejercicio_3_auditoria_web.manage runserver
 ```
 
 Abrir `http://127.0.0.1:8000/` para ver el panel.
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/c6e65c9a-3e18-427a-bb3a-a3e1ee1e0727" />
+
